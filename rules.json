@@ -1,0 +1,20 @@
+[
+  {
+    "error_type": "NullPointerException",
+    "modules": ["auth.service"],
+    "root_cause": "Auth object not initialized",
+    "repro_steps": [
+      "Call API without auth token",
+      "Simulate null session"
+    ]
+  },
+  {
+    "error_type": "TimeoutException",
+    "modules": ["db.connector"],
+    "root_cause": "Database not responding",
+    "repro_steps": [
+      "Disconnect DB",
+      "Send query request"
+    ]
+  }
+]
